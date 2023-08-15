@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/qrimage.jpg">
+    <title>QR Generator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+
+</head>
+<body>
+      <h1>QR Code Generator</h1>
+    <div id="two">
+    <input type="text" id="text-input" placeholder="Enter text or URL">
+    <button onclick="generateQR()" class="ram">Get QR</button>
+       <div id="save" onclick="saveQRCode()">
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM127 281c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l71 71L232 136c0-13.3 10.7-24 24-24s24 10.7 24 24l0 182.1 71-71c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 393c-9.4 9.4-24.6 9.4-33.9 0L127 281z"/></svg>
+       </div>
+    </div>
+   
+
+       <div id="QR-div">
+         <div id="sai">Scan Here</div>
+        <div id="qrcode"></div>
+
+       </div>
+  
+      
+
+    <script src="./app.js"></script> 
+</body>
+</html>
